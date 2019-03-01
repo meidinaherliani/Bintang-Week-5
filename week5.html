@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chat board</title>
+	<script language="javascript" src="index.js"></script>
+</head>
+<body id = "chat board" onload="init();">
+
+<div id="title">
+	<h1>Chat Board</h1>
+</div>
+
+<script type="text/javascript">
+	function init() {
+		// body...
+		var badan = document.getElementById("chat board");
+
+		var divUtama = document.createElement("div");
+
+		var p1 = document.createElement("p");
+		p1.appendChild(document.createTextNode("Nama : "));
+
+		var input1 = document.createElement("input");
+		input1.setAttribute("type", "text");
+		input1.setAttribute("id", "inputNama");
+
+		var p2 = document.createElement("p");
+		p2.appendChild(document.createTextNode("Chat :   "));
+
+		var input2 = document.createElement("input");
+		input2.setAttribute("type", "text");
+		input2.setAttribute("id", "inputChat");
+
+
+		divUtama.appendChild(p1);
+		divUtama.appendChild(input1);
+		divUtama.appendChild(p2);
+		divUtama.appendChild(input2);
+
+		badan.appendChild(divUtama);
+	}
+</script>
+ 
+ <p>
+ 	<input type="submit" name="SEND" id="Send" value="Send">
+ </p>
+
+</body>
+</html>
